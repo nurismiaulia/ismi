@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Mengatur font yang dipakai dan background halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #ffe4e1; /* Ubah background menjadi pink muda */
+}
+
+/* Membuat Container menjadi layout flexbox dan kotak login di tengah */
+.container {
+    display: flex;
+    flex-basis: wrap;
+    justify-content: center;
+}
+
+/* Mengatur kotak form login lebar 400px dan background pink muda */
+.login-box {
+    margin-top: 150px;
+    flex-basis: 400px;
+    background: #fff; /* Ubah warna background menjadi putih */
+    padding: 20px;
+    border-radius: 10px; /* Tambahkan sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+/* Mengatur judul form dengan border bawah dan posisi di tengah */
+.login-box h2 {
+    border-bottom: 1px solid #ff69b4; /* Ubah warna border menjadi pink */
+    color: #ff1493; /* Ubah warna judul menjadi pink gelap */
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0px 0px 20px;
+}
+
+/* Mengatur agar tag input dan select memenuhi container dan tampilan lebih bagus */
+input, select {
+    width: 100%;
+    padding: 15px 20px; /* Padding yang nyaman */
+    margin: 8px 0;
+    border: 1px solid #ff69b4; /* Ubah warna border input menjadi pink */
+    border-radius: 5px; /* Tambahkan sudut membulat pada input */
+}
+
+/* Mengatur tampilan tombol submit */
+input[type=submit] {
+    background-color: #ff69b4; /* Ubah background tombol menjadi pink */
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 20px; /* Tambahkan padding pada tombol */
+    border-radius: 5px; /* Tambahkan sudut membulat pada tombol */
+}
+
+/* Menambahkan efek hover pada tombol submit */
+input[type=submit]:hover {
+    background-color: #ff1493; /* Ubah warna saat hover menjadi pink gelap */
+}

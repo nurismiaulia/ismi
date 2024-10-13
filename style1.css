@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Ganti dengan font yang lebih modern */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff69b4; /* Ubah warna menjadi pink cerah */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0px 10px;
+    border-right: 1px dotted #f9f9f9;
+    padding-right: 20px;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 0; /* Ubah padding menjadi 60px */
+    text-align: center;
+    margin: 20px 0; /* Tambahkan margin atas dan bawah */
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu-item {
+    text-align: center; /* Pusatkan konten di dalam menu-item */
+    margin: 20px 0; /* Tambahkan margin atas dan bawah untuk jarak */
+}
+
+.menu-item img {
+    max-width: 40%;
+    border-radius: 50%; /* Ubah menjadi bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    display: block; /* Pastikan gambar sebagai elemen block */
+    margin: 0 auto; /* Pusatkan gambar */
+}
+
+#hours {
+    background-color: #ffe4e1; /* Ubah warna latar belakang menjadi pink muda */
+    padding: 50px 0;
+}
+
+#hours p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #ff1493; /* Ubah warna latar belakang footer menjadi pink gelap */
+    color: #fff; /* Ubah warna teks footer menjadi putih */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

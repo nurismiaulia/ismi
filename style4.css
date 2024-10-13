@@ -1,0 +1,80 @@
+/* Mengatur form-group agar tidak terpengaruh float */
+.form-group {
+    clear: both;
+    margin-bottom: 15px; /* Menambah jarak antar form-group */
+}
+
+/* Mengatur lebar label 30% dengan teks bold */
+.form-group label {
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+    color: #333; /* Warna teks lebih lembut */
+}
+
+/* Mengatur lebar .input 50% dan sejajar dengan label */
+.form-group .input {
+    display: block;
+    width: 50%;
+    float: left;
+    padding: 10px; /* Menambah padding pada input */
+    border: 1px solid #ccc; /* Menambah border */
+    border-radius: 4px; /* Membuat sudut melengkung */
+}
+
+/* Mengatur input radio */
+input[type=radio] {
+    width: auto; /* Mengembalikan ke ukuran default */
+    margin-right: 10px; /* Menambah jarak antar radio button */
+}
+
+/* Background form menjadi pink */
+.form-container {
+    background-color: pink; /* Mengubah background form menjadi pink */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+/* Tombol simpan dengan warna biru */
+.tombol.simpan {
+    background: #038ade;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Tombol simpan hover */
+.tombol.simpan:hover {
+    background: #026ab5;
+}
+
+/* Tombol reset dengan warna oranye */
+.tombol.reset {
+    background: #fb8307;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Tombol reset hover */
+.tombol.reset:hover {
+    background: #d97005;
+}
+
+/* Tampilan form menumpuk pada layar kecil */
+@media (max-width: 700px) {
+    .form-group label, .form-group .input {
+        width: 100%;
+        float: none;
+    }
+}

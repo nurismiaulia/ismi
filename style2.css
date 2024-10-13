@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Mengatur desain header */
+header {
+    background: #ff6f91; /* Warna pink cerah */
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Mengatur lebar menu 20% dengan background pink gelap */
+aside {
+    flex: 20%;
+    background: #d81b60; /* Pink gelap */
+    color: #fff;
+    padding-top: 30px;
+}
+
+/* Mengatur lebar konten utama 80% dengan background putih */
+section.main {
+    flex: 80%;
+    background: #fff; /* Background putih */
+    min-height: 530px;
+    padding: 30px 20px; /* Padding yang lebih besar */
+    flex-grow: 1;
+    margin: 10px; /* Tambahkan margin untuk ruang ekstra */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Mengatur footer dengan background pink muda dan teks di tengah */
+footer {
+    background: #ff8da4; /* Pink muda */
+    color: #fff;
+    padding: 20px; /* Menambah sedikit padding untuk kenyamanan */
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus dan besar */
+}
+
+/* Mengatur layout pada layar kecil (responsive) */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    section.main {
+        padding: 20px 10px; /* Padding lebih kecil di layar kecil */
+    }
+}
+
+/* Navigasi */
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s ease; /* Efek transisi saat hover dan geser */
+}
+
+.menu a:hover {
+    background: #c2185b; /* Hover background pink gelap */
+    transform: translateX(5px); /* Efek geser saat hover */
+}
+
+.menu a.active {
+    background: #b71c1c; /* Warna latar belakang untuk item menu aktif */
+}
+
